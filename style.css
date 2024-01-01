@@ -1,0 +1,60 @@
+body {
+	background: hsl(27, 66%, 92%);
+	font-family: "D-Din", "Source Sans Pro", Arial, sans-serif;
+}
+/* soft red: bg and bar-graph:normal */
+.header {
+	background-color: hsl(10, 79%, 65%);
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: flex-start;
+	max-width: 1440px;
+	margin: auto;
+}
+
+/* cream: main content bg */
+.main {
+	background: hsl(33, 100%, 98%);
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: flex-start;
+	max-width: 1440px;
+	margin: auto;
+}
+
+.main__wrapper {
+	max-width: 50%;
+}
+
+.chart {
+	min-width: 100%;
+}
+.chart__weekly {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	align-items: center;
+}
+/* cyan: bar-graph:active */
+.bar__graph.active {
+	background-color: hsl(186, 34%, 60%);
+}
+
+/* dark brown: main-body-text */
+.main__header-text {
+	color: hsl(25, 47%, 15%);
+}
+
+/* medium brown: field-title */
+.footer {
+	background: hsl(33, 100%, 98%);
+
+	/* color: hsl(28, 10%, 53%); */
+	color: hsl(25, 47%, 15%);
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: space-between;
+	max-width: 1440px;
+}
+
+/* Very pale orange: */
