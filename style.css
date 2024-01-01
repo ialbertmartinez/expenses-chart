@@ -1,15 +1,44 @@
 body {
 	background: hsl(27, 66%, 92%);
-	font-family: "D-Din", "Source Sans Pro", Arial, sans-serif;
+	font-family: "DM Sans", Arial, sans-serif;
 }
 /* soft red: bg and bar-graph:normal */
 .header {
+	box-sizing: border-box;
 	background-color: hsl(10, 79%, 65%);
 	display: flex;
-	flex-flow: column nowrap;
-	align-items: flex-start;
-	max-width: 1440px;
+	flex-flow: row nowrap;
+	align-items: center;
+	justify-content: flex-start;
+	max-width: 400px;
 	margin: auto;
+	padding: 16px 20px;
+	border-radius: 12px;
+}
+
+.header__balance {
+	color: hsla(33, 100%, 98%, 80%);
+}
+
+.field__title {
+	margin: 0;
+	padding: 0;
+	line-height: 1.3;
+	margin-bottom: 5px;
+
+	font-family: "DM Sans", Arial, sans-serif;
+	font-size: xx-small;
+	font-weight: 400;
+}
+
+.field__value_balance {
+	margin: 0;
+	padding: 0;
+	line-height: 1;
+	font-weight: 700;
+}
+
+.header__field-value_balance {
 }
 
 /* cream: main content bg */
@@ -24,6 +53,7 @@ body {
 
 .main__wrapper {
 	max-width: 50%;
+	font-size: 18px;
 }
 
 .chart {
