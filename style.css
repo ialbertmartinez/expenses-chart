@@ -41,6 +41,11 @@ body {
 .header__field-value_balance {
 }
 
+.header__logo {
+	background: url(images/expenses_chart-logo-02.png);
+	background-size: 70px 70px;
+}
+
 /* cream: main content bg */
 .main {
 	background: hsl(33, 100%, 98%);
