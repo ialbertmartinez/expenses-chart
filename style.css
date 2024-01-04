@@ -1,6 +1,9 @@
-body {
+.page {
 	background: hsl(27, 66%, 92%);
 	font-family: "DM Sans", Arial, sans-serif;
+	display: flex;
+	flex-direction: column;
+	gap: 50px;
 }
 /* soft red: bg and bar-graph:normal */
 .header {
@@ -10,7 +13,7 @@ body {
 	flex-flow: row nowrap;
 	align-items: center;
 	justify-content: space-between;
-	max-width: 400px;
+	min-width: 400px;
 	margin: 0 auto;
 	padding: 16px 20px;
 	border-radius: 12px;
@@ -21,36 +24,47 @@ body {
 	max-width: 50%;
 	display: flex;
 	flex-flow: row nowrap;
-	justify-content: center;
-	align-content: center;
-	align-items: center;
+	align-items: flex-start;
 }
 
 .header__column_balance {
 	flex-flow: column nowrap;
 }
-
-.header__field {
+/*
+.field = font-family
+.field__title = font-size
+.field__title_footer = font-color
+*/
+.field {
 	box-sizing: border-box;
 	font-family: "DM Sans", Arial, sans-serif;
 	margin: 0;
 	padding: 0;
-	color: hsla(33, 100%, 98%, 80%);
+	/* color: hsla(33, 100%, 98%, 80%); */
 }
 
 .field__title {
 	box-sizing: border-box;
 	line-height: 2;
-	font-size: xx-small;
+	font-size: 12px;
 	font-weight: 400;
 }
 
-.field__value_balance {
+.field__title_header {
+	color: hsla(33, 100%, 98%, 80%);
+	text-align: left;
+}
+
+.field__value {
 	box-sizing: border-box;
+	font-weight: 700;
 	margin: 0;
 	padding: 0;
+}
+
+.field__value_balance {
 	line-height: 1.3;
-	font-weight: 700;
+	color: hsla(33, 100%, 98%, 80%);
 }
 
 .header__logo {
@@ -63,17 +77,41 @@ body {
 
 /* cream: main content bg */
 .main {
-	background: hsl(33, 100%, 98%);
+	box-sizing: border-box;
 	display: flex;
-	flex-flow: column nowrap;
-	align-items: flex-start;
+	flex-flow: row nowrap;
 	max-width: 1440px;
-	margin: auto;
+	margin: 0 auto;
+	/* padding: 16px 20px; */
+	/* background: #fffaf5; */
+	/* flex-flow: column nowrap; */
+	/* align-items: flex-start; */
 }
 
 .main__wrapper {
-	max-width: 50%;
+	box-sizing: border-box;
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: stretch-between;
+	gap: 16px;
+	/* width: 100%; */
+	background: #fffaf5;
+	min-width: 400px;
 	font-size: 18px;
+	padding: 16px;
+	border-radius: 12px;
+}
+
+/* dark brown: main-body-text */
+.main__header-text {
+	color: hsl(25, 47%, 15%);
+	margin: 0;
+	padding: 0;
+	margin-block: 0;
+	margin-inline: 0;
+	font-size: 18px;
+	font-family: "DM Sans", "Source Sans Pro", sans-serif;
+	font-weight: 700;
 }
 
 .chart {
@@ -89,22 +127,84 @@ body {
 .bar__graph.active {
 	background-color: hsl(186, 34%, 60%);
 }
-
-/* dark brown: main-body-text */
-.main__header-text {
-	color: hsl(25, 47%, 15%);
+.main__divider {
+	box-sizing: border-box;
+	overflow: visible;
+	height: 2px;
+	display: block;
+	background: transparent;
+	box-shadow: inset 0 0 1px hsl(28, 10%, 53%);
 }
-
 /* medium brown: field-title */
-.footer {
+.main__footer {
+	box-sizing: border-box;
+	display: grid;
+	grid-template-areas: "spent change";
+	/* box-sizing: border-box;
 	background: hsl(33, 100%, 98%);
-
-	/* color: hsl(28, 10%, 53%); */
-	color: hsl(25, 47%, 15%);
 	display: flex;
 	flex-flow: row nowrap;
-	align-items: space-between;
-	max-width: 1440px;
+	align-items: center;
+	justify-content: space-between;
+	min-width: 400px;
+	margin: 0 auto;
+	padding: 16px 20px;
+	border-radius: 12px; */
 }
 
+.footer__columns {
+	box-sizing: border-box;
+	display: grid;
+	grid-template-areas: "spent change";
+	/* justify-content: space-between; */
+	/* align-items: space-between; */
+	/* max-width: 50%	; */
+	/* min-width: 400px; */
+}
+
+.footer__column {
+	min-width: 50%;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+}
+
+.footer__column_spent {
+	grid-area: spent;
+}
+
+.field__title_footer {
+	color: hsl(28, 10%, 53%);
+	line-height: 1;
+	margin-top: auto;
+	padding-bottom: 4px;
+}
+
+.footer__value {
+	color: hsl(25, 47%, 15%);
+	font-weight: 700;
+}
+
+.field__value_spent {
+	font-size: 1.4rem;
+	line-height: 1;
+	padding-top: 4px;
+}
+
+.footer__column_change {
+	flex-flow: column-reverse nowrap;
+	grid-area: change;
+	align-items: flex-end;
+}
+
+.field__title_footer-reverse {
+	color: hsl(28, 10%, 53%);
+	line-height: 1;
+}
+
+.field__value_change {
+	margin-top: auto;
+	font-size: xx-small;
+	padding-bottom: 4px;
+}
 /* Very pale orange: */

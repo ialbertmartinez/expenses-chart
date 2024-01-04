@@ -31,11 +31,12 @@
 			}
 		</style>
 	</head>
-	<body>
+
+	<body class="page">
 		<header class="header">
 			<div class="header__column header__column_balance">
-				<h1 class="header__field field__title">My balance</h1>
-				<p class="header__field field__value_balance">&dollar;921.48</p>
+				<h1 class="field field__title field__title_header">My balance</h1>
+				<p class="field field__value field__value_balance">&dollar;921.48</p>
 			</div>
 			<div class="header__column">
 				<img
@@ -83,15 +84,26 @@
 						</div>
 					</div>
 				</section>
+				<div class="main__divider"></div>
 				<footer class="main__footer footer">
-					<div class="footer__column">
-						<h3 class="footer__field-title">Total this month</h3>
-						<p class="footer__field-value_spending">$478.33</p>
+					<!-- <div class="footer__columns"> -->
+					<!-- col 1 -->
+					<div class="footer__column footer__column_spent">
+						<h3 class="field field__title field__title_footer">
+							Total this month
+						</h3>
+						<p class="field field__value field__value_spent">$478.33</p>
 					</div>
-					<div class="footer__column">
-						<h3 class="footer__field-title">from last month</h3>
-						<p class="footer__field-value_changed">+2.4%</p>
+					<!-- /col 1 -->
+					<!-- col 2 -->
+					<div class="footer__column footer__column_change">
+						<h3 class="field field__title field__title_footer-reverse">
+							from last month
+						</h3>
+						<p class="field field__value field__value_change">+2.4%</p>
 					</div>
+					<!-- /col 2 -->
+					<!-- </div> -->
 				</footer>
 			</div>
 		</main>
@@ -104,5 +116,6 @@
 				>Frontend Mentor</a
 			>. Coded by <a href="https://ialbertmartinez.com">Albert Martinez</a>.
 		</div>
+		<script src="scripts/main.js"></script>
 	</body>
 </html>

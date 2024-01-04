@@ -1,4 +1,4 @@
-[
+export const BALANCES = [
   {
     "day": "mon",
     "amount": 17.45
