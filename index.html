@@ -33,89 +33,62 @@
 	</head>
 
 	<body class="page">
-		<header class="header">
-			<div class="header__column header__column_balance">
-				<h1 class="field field__title field__title_header">My balance</h1>
-				<p class="field field__value field__value_balance">&dollar;921.48</p>
-			</div>
-			<div class="header__column">
-				<img
-					src="images/logo.svg"
-					alt="expenses chart logo of two symmetric circles; 1 lined and the other filled " />
-			</div>
-		</header>
+		<section class="page__wrapper">
+			<header class="header">
+				<div class="header__column header__column_balance">
+					<h1 class="field field__title field__title_header">My balance</h1>
+					<p class="field field__value field__value_balance">&dollar;921.48</p>
+				</div>
+				<div class="header__column">
+					<img
+						class="header__logo"
+						src="images/logo.svg"
+						alt="expenses chart logo of two symmetric circles; 1 lined and the other filled " />
+				</div>
+			</header>
 
-		<main class="main">
-			<div class="main__wrapper">
-				<header class="main__header">
-					<h2 class="main__header-text">Spending - Last 7 days</h2>
-				</header>
-				<section class="main__chart">
-					<div class="chart">
-						<div class="chart__weekly">
-							<div class="bar">
-								<div class="bar__graph"></div>
-								<p class="bar__day">mon</p>
-							</div>
-							<div class="bar">
-								<div class="bar__graph"></div>
-								<p class="bar__day">tue</p>
-							</div>
-							<div class="bar">
-								<div class="bar__graph active"></div>
-								<p class="bar__day">wed</p>
-							</div>
-							<div class="bar">
-								<div class="bar__graph"></div>
-								<p class="bar__day">thu</p>
-							</div>
-							<div class="bar">
-								<div class="bar__graph"></div>
-								<p class="bar__day">fri</p>
-							</div>
-							<div class="bar">
-								<div class="bar__graph"></div>
-								<p class="bar__day">sat</p>
-							</div>
-							<div class="bar">
-								<div class="bar__graph"></div>
-								<p class="bar__day">sun</p>
-							</div>
+			<main class="main">
+				<div class="main__wrapper">
+					<header class="main__header">
+						<h2 class="main__header-text">Spending - Last 7 days</h2>
+					</header>
+
+					<section class="main__chart">
+						<div id="chart" class="chart"></div>
+					</section>
+
+					<div class="main__divider"></div>
+
+					<footer class="main__footer footer">
+						<!-- <div class="footer__columns"> -->
+						<!-- col 1 -->
+						<div class="footer__column footer__column_spent">
+							<h3 class="field field__title field__title_footer">
+								Total this month
+							</h3>
+							<p class="field field__value field__value_spent">$478.33</p>
 						</div>
-					</div>
-				</section>
-				<div class="main__divider"></div>
-				<footer class="main__footer footer">
-					<!-- <div class="footer__columns"> -->
-					<!-- col 1 -->
-					<div class="footer__column footer__column_spent">
-						<h3 class="field field__title field__title_footer">
-							Total this month
-						</h3>
-						<p class="field field__value field__value_spent">$478.33</p>
-					</div>
-					<!-- /col 1 -->
-					<!-- col 2 -->
-					<div class="footer__column footer__column_change">
-						<h3 class="field field__title field__title_footer-reverse">
-							from last month
-						</h3>
-						<p class="field field__value field__value_change">+2.4%</p>
-					</div>
-					<!-- /col 2 -->
-					<!-- </div> -->
-				</footer>
-			</div>
-		</main>
-
-		<hr />
-
-		<div class="attribution">
+						<!-- /col 1 -->
+						<!-- col 2 -->
+						<div class="footer__column footer__column_change">
+							<h3 class="field field__title field__title_footer-reverse">
+								from last month
+							</h3>
+							<p class="field field__value field__value_change">+2.4%</p>
+						</div>
+						<!-- /col 2 -->
+						<!-- </div> -->
+					</footer>
+				</div>
+			</main>
+		</section>
+		<!-- <div class="attribution">
 			Challenge by
 			<a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
 				>Frontend Mentor</a
 			>. Coded by <a href="https://ialbertmartinez.com">Albert Martinez</a>.
-		</div>
-		<script src="scripts/main.js"></script>
+		</div> -->
+		<!-- <script type="module" src="data.json"></script> -->
+		<script src="./scripts/main.js"></script>
 	</body>
 </html>
