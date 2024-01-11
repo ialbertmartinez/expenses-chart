@@ -1,0 +1,72 @@
+.footer {
+	box-sizing: border-box;
+	display: grid;
+	font-family: "DM Sans", arial, sans-serif;
+	grid-template-areas: "spent change";
+}
+
+.footer__column {
+	min-width: 50%;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+}
+
+.footer__column_spent {
+	grid-area: spent;
+}
+
+.footer__field-title {
+	box-sizing: border-box;
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 1;
+	color: hsl(28, 10%, 53%);
+	margin: 0;
+	padding: 0;
+	margin-top: auto;
+	padding-bottom: 4px;
+}
+
+.footer__field-value {
+	box-sizing: border-box;
+	color: hsl(25, 47%, 15%);
+	font-weight: 700;
+	margin: 0;
+	padding: 0;
+}
+
+.footer__field-value_spent {
+	font-size: 1.875rem;
+	line-height: 1;
+	padding-top: 4px;
+}
+
+.footer__column_change {
+	flex-flow: column-reverse nowrap;
+	grid-area: change;
+	align-items: flex-end;
+}
+
+.footer__field-title_reverse {
+	color: hsl(28, 10%, 53%);
+	line-height: 1;
+	font-weight: 400;
+	font-size: 12px;
+}
+
+.footer__field-value_change {
+	margin-top: auto;
+	font-size: 0.75rem;
+	padding-bottom: 4px;
+}
+
+@media all and (max-width: 470px) {
+	.footer__field-title_reverse {
+		font-size: 1rem;
+	}
+
+	.footer__field-value_change {
+		font-size: 1rem;
+	}
+}

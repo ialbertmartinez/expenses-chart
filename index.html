@@ -12,14 +12,13 @@
 			href="./images/favicon-32x32.png" />
 
 		<title>Frontend Mentor | Expenses chart component</title>
-		<link rel="stylesheet" href="normalize.css" />
+		<!-- <link rel="stylesheet" href="style.css" /> -->
+		<link rel="stylesheet" href="./pages/index.css" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
 			href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,700&display=swap"
 			rel="stylesheet" />
-		<link rel="stylesheet" href="style.css" />
-		<!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
 
 		<style>
 			.attribution {
@@ -36,8 +35,8 @@
 		<section class="page__wrapper">
 			<header class="header">
 				<div class="header__column header__column_balance">
-					<h1 class="field field__title field__title_header">My balance</h1>
-					<p class="field field__value field__value_balance">&dollar;921.48</p>
+					<h1 class="header__field-title">My balance</h1>
+					<p class="header__field-value">&dollar;921.48</p>
 				</div>
 				<div class="header__column">
 					<img
@@ -54,27 +53,31 @@
 					</header>
 
 					<section class="main__chart">
-						<div id="chart" class="chart"></div>
+						<div id="chart" class="chart">
+							<!-- auto populates with json data from data.json -->
+						</div>
 					</section>
 
 					<div class="main__divider"></div>
 
-					<footer class="main__footer footer">
+					<footer class="footer">
 						<!-- <div class="footer__columns"> -->
 						<!-- col 1 -->
 						<div class="footer__column footer__column_spent">
-							<h3 class="field field__title field__title_footer">
-								Total this month
-							</h3>
-							<p class="field field__value field__value_spent">$478.33</p>
+							<h3 class="footer__field-title">Total this month</h3>
+							<p class="footer__field-value footer__field-value_spent">
+								$478.33
+							</p>
 						</div>
 						<!-- /col 1 -->
 						<!-- col 2 -->
 						<div class="footer__column footer__column_change">
-							<h3 class="field field__title field__title_footer-reverse">
+							<h3 class="footer__field-title footer__field-title_reverse">
 								from last month
 							</h3>
-							<p class="field field__value field__value_change">+2.4%</p>
+							<p class="footer__field-value footer__field-value_change">
+								+2.4%
+							</p>
 						</div>
 						<!-- /col 2 -->
 						<!-- </div> -->

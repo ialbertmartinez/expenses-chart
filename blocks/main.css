@@ -1,0 +1,52 @@
+.main {
+	box-sizing: border-box;
+	display: flex;
+	flex-flow: row nowrap;
+	min-width: 100%;
+}
+
+.main__wrapper {
+	display: flex;
+	flex-flow: column nowrap;
+	gap: 16px;
+	align-items: stretch;
+
+	background: #fffaf5;
+	border-radius: 12px;
+	box-sizing: border-box;
+
+	min-width: 450px;
+	font-size: 1.125rem;
+	padding: 16px;
+}
+
+.main__header-text {
+	color: hsl(25, 47%, 15%);
+	margin: 0;
+	padding: 0;
+	font-size: 1.25rem;
+	font-family: "DM Sans", arial, sans-serif;
+	font-weight: 700;
+}
+
+.main__divider {
+	box-sizing: border-box;
+	overflow: visible;
+	height: 2px;
+	display: block;
+	background: transparent;
+	box-shadow: inset 0 0 1px hsl(28, 10%, 53%);
+}
+
+@media all and (max-width: 470px) {
+	.main__wrapper {
+		min-width: 100%;
+		max-width: 375px;
+	}
+	.main__header-text {
+		font-size: 1.5rem;
+	}
+	.main__chart {
+		max-width: 375px;
+	}
+}

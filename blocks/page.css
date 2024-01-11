@@ -1,0 +1,28 @@
+.page {
+	box-sizing: border-box;
+	background: hsl(27, 66%, 92%);
+	font-family: "DM Sans", arial, sans-serif;
+	font-size: 16px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+	padding-top: 150px;
+}
+
+.page__wrapper {
+	box-sizing: border-box;
+	max-width: 450px;
+	font-family: "DM Sans", arial, sans-serif;
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+
+@media all and (max-width: 470px) {
+	.page__wrapper {
+		min-width: 375px;
+		max-width: 375px;
+	}
+}
