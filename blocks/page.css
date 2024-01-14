@@ -22,7 +22,7 @@
 
 @media all and (max-width: 470px) {
 	.page__wrapper {
-		min-width: 375px;
+		min-width: 90%;
 		max-width: 375px;
 	}
 }

@@ -18,7 +18,7 @@
 
 .footer__field-title {
 	box-sizing: border-box;
-	font-size: 12px;
+	font-size: 14px;
 	font-weight: 400;
 	line-height: 1;
 	color: hsl(28, 10%, 53%);
@@ -48,13 +48,6 @@
 	align-items: flex-end;
 }
 
-.footer__field-title_reverse {
-	color: hsl(28, 10%, 53%);
-	line-height: 1;
-	font-weight: 400;
-	font-size: 12px;
-}
-
 .footer__field-value_change {
 	margin-top: auto;
 	font-size: 0.75rem;
@@ -62,10 +55,6 @@
 }
 
 @media all and (max-width: 470px) {
-	.footer__field-title_reverse {
-		font-size: 1rem;
-	}
-
 	.footer__field-value_change {
 		font-size: 1rem;
 	}
